@@ -44,11 +44,21 @@ menubar:
     # icon: 支持 svg/img 标签，可以定义在 icons.yml 文件中，也支持外部图片的 URL
     # title: 标题
     # url: 点击跳转到哪，支持相对路径和绝对路径
-    # - id: post
-    #   theme: '#1BCDFC'
-    #   icon: solar:documents-bold-duotone
-    #   title: 博客
-    #   url: /
+    - id: post
+      theme: '#1BCDFC'
+      icon: solar:documents-bold-duotone
+      title: 博客
+      url: /
+    - id: job
+      theme: '#42b883'
+      icon: solar:documents-bold-duotone
+      title: 找工
+      url: /job-search/
+    - id: about
+      theme: '#FF6B6B'
+      icon: solar:documents-bold-duotone
+      title: 关于
+      url: /about/
     # - id: wiki
     #   theme: '#3DC550'
     #   icon: solar:notebook-bookmark-bold-duotone
@@ -145,6 +155,11 @@ site_tree:
     rightbar: timeline
   # 其它自定义页面配置 layout: page
   page:
+    leftbar: recent
+    rightbar: toc
+  # 求职页面配置
+  job:
+    menu_id: job
     leftbar: recent
     rightbar: toc
 
